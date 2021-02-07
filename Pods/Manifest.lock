@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (5.2.2)
+  - AlamofireURLCache5 (0.5.0):
+    - Alamofire (~> 5.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - AlamofireURLCache5
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireURLCache5
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  AlamofireURLCache5: b839c7db7c61bf40bdf467896eb587baecafb2c0
+
+PODFILE CHECKSUM: 2cefdb5211eef059f148daf3d73f7b0107d59a97
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CatagoryCell" customModule="EvatixApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="113" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="113" height="66"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXd-MY-pig" userLabel="Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="113" height="66"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVx-0o-cuZ">
+                                <rect key="frame" x="8" y="12" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 tasks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBw-Ua-1Px">
+                                <rect key="frame" x="8" y="41" width="46" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8x-5u-4Uz" userLabel="Type Color view">
+                                <rect key="frame" x="97" y="8" width="8" height="8"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="G8x-5u-4Uz" secondAttribute="height" multiplier="1:1" id="7tI-CI-e4b"/>
+                                    <constraint firstAttribute="height" constant="8" id="SdB-MK-vgq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pBw-Ua-1Px" firstAttribute="leading" secondItem="uVx-0o-cuZ" secondAttribute="leading" id="0FY-n0-u0b"/>
+                            <constraint firstAttribute="trailing" secondItem="G8x-5u-4Uz" secondAttribute="trailing" constant="8" id="Dll-Kp-6Yf"/>
+                            <constraint firstItem="G8x-5u-4Uz" firstAttribute="top" secondItem="hXd-MY-pig" secondAttribute="top" constant="8" id="U9y-83-rzt"/>
+                            <constraint firstItem="pBw-Ua-1Px" firstAttribute="top" secondItem="uVx-0o-cuZ" secondAttribute="bottom" constant="8" symbolic="YES" id="app-YJ-5nU"/>
+                            <constraint firstItem="uVx-0o-cuZ" firstAttribute="leading" secondItem="hXd-MY-pig" secondAttribute="leading" constant="8" id="auQ-Ie-LFT"/>
+                            <constraint firstItem="uVx-0o-cuZ" firstAttribute="top" secondItem="hXd-MY-pig" secondAttribute="top" constant="12" id="uP2-Cx-ss5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hXd-MY-pig" secondAttribute="trailing" id="kIl-m8-4wB"/>
+                <constraint firstAttribute="top" secondItem="hXd-MY-pig" secondAttribute="top" id="o3f-wb-2tr"/>
+                <constraint firstItem="hXd-MY-pig" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="v2i-mp-b24"/>
+                <constraint firstAttribute="bottom" secondItem="hXd-MY-pig" secondAttribute="bottom" id="wQd-OB-yMt"/>
+            </constraints>
+            <size key="customSize" width="113" height="66"/>
+            <connections>
+                <outlet property="catagoryIndicatorView" destination="G8x-5u-4Uz" id="ayN-0F-8a6"/>
+                <outlet property="containerView" destination="hXd-MY-pig" id="IC8-C3-tRu"/>
+                <outlet property="subTitleLabel" destination="pBw-Ua-1Px" id="HSs-6w-npj"/>
+                <outlet property="titleLabel" destination="uVx-0o-cuZ" id="9tS-cD-9u8"/>
+            </connections>
+            <point key="canvasLocation" x="117" y="19"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
